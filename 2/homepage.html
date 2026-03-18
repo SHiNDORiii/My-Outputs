@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holy Cross College Pampanga · Dashboard</title>
+  <!-- Font Awesome 5 for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <i class="fas fa-cross"></i>
+        <div class="logo-text">
+          <span class="logo-main">HCC Schedule Portal</span>
+          <span class="logo-sub">Fides, Caritas, Libertas</span>
+        </div>
+      </div>
+      
+      <div class="nav-user">
+        <div class="user-profile">
+          <img src="https://ui-avatars.com/api/?name=Juan+Dela+Cruz&background=1e3c72&color=fff&size=40" alt="Profile" class="profile-img">
+          <div class="user-info">
+            <span class="user-name">Juan Dela Cruz</span>
+            <span class="user-role">BSCS 1st Year - Section A</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Dashboard Container -->
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-menu">
+        <a href="#" class="menu-item active">
+          <i class="fas fa-home"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="#" class="menu-item">
+          <i class="fas fa-calendar-alt"></i>
+          <span>My Schedule</span>
+        </a>
+        <a href="#" class="menu-item">
+          <i class="fas fa-book"></i>
+          <span>Classes</span>
+        </a>
+        <a href="#" class="menu-item">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <span>Teachers</span>
+        </a>
+        <a href="#" class="menu-item">
+          <i class="fas fa-file-alt"></i>
+          <span>Announcements</span>
+        </a>
+      </div>
+      
+      <div class="sidebar-footer">
+        <div class="school-info">
+          <i class="fas fa-cross"></i>
+          <div>
+            <p class="school-name">Holy Cross College</p>
+            <p class="school-location">Pampanga</p>
+          </div>
+        </div>
+        <div class="logout-btn">
+          <i class="fas fa-sign-out-alt"></i>
+          <span>Logout</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Welcome Header -->
+      <div class="welcome-header">
+        <div>
+          <h1>Welcome back, Juan! <span>👋</span></h1>
+          <p class="welcome-date">Today is March 17, 2026 · Second Semester</p>
+        </div>
+        <div class="header-actions">
+          <button class="btn-primary">
+            <i class="fas fa-download"></i> Export Schedule
+          </button>
+          <button class="btn-secondary">
+            <i class="fas fa-print"></i> Print
+          </button>
+        </div>
+      </div>
+
+      <!-- Stats Cards -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon blue">
+            <i class="fas fa-book-open"></i>
+          </div>
+          <div class="stat-info">
+            <h3>8</h3>
+            <p>Current Classes</p>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon orange">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div class="stat-info">
+            <h3>4.5</h3>
+            <p>Hours Today</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Two Column Layout -->
+      <div class="content-grid">
+        <!-- Left Column -->
+        <div class="left-column">
+          <!-- Today's Schedule -->
+          <div class="card">
+            <div class="card-header">
+              <h2><i class="fas fa-calendar-day"></i> Today's Schedule</h2>
+              <a href="#" class="view-link">View Full Week <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="schedule-list">
+              <div class="schedule-item current">
+                <div class="schedule-time">
+                  <span class="time-badge">Now</span>
+                  <span>08:30 - 10:00</span>
+                </div>
+                <div class="schedule-details">
+                  <h3>Web Development BSCS - 1A</h3>
+                  <p>Mr. Joseph Cris Valdez · Computer Lab A</p>
+                </div>
+                <div class="schedule-status">
+                  <span class="status-badge ongoing">Ongoing</span>
+                </div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-time">
+                  <span>10:15 - 11:45</span>
+                </div>
+                <div class="schedule-details">
+                  <h3>Programming 2</h3>
+                  <p>Mrs. Maria Reyes · Computer Lab B</p>
+                </div>
+                <div class="schedule-status">
+                  <span class="status-badge upcoming">Up next</span>
+                </div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-time">
+                  <span>12:00 - 13:00</span>
+                </div>
+                <div class="schedule-details">
+                  <h3>Lunch Break</h3>
+                </div>
+                <div class="schedule-status">
+                  <span class="status-badge break">Break</span>
+                </div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-time">
+                  <span>13:30 - 15:00</span>
+                </div>
+                <div class="schedule-details">
+                  <h3>Discrete Mathematics</h3>
+                  <p>Ms. Patricia Cruz · Drawing Room</p>
+                </div>
+              </div>
+              <div class="schedule-item">
+                <div class="schedule-time">
+                  <span>15:10 - 16:40</span>
+                </div>
+                <div class="schedule-details">
+                  <h3>Physical Education</h3>
+                  <p>Coach Robert Lim · Gymnasium / HS Grounds</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upcoming Events -->
+          <div class="card">
+            <div class="card-header">
+              <h2><i class="fas fa-tasks"></i> Upcoming Events</h2>
+              <a href="#" class="view-link">View All</a>
+            </div>
+            <div class="assignment-list">
+              <div class="assignment-item urgent">
+                <div class="assignment-icon">
+                  <i class="fas fa-file-alt"></i>
+                </div>
+                <div class="assignment-details">
+                  <h3>Event 1</h3>
+                  <p>Tomorrow, 11:59 PM</p>
+                </div>
+                <div class="assignment-priority">
+                </div>
+              </div>
+              <div class="assignment-item">
+                <div class="assignment-icon">
+                  <i class="fas fa-flask"></i>
+                </div>
+                <div class="assignment-details">
+                  <h3>Event 2</h3>
+                  <p>In 3 days</p>
+                </div>
+                <div class="assignment-priority">
+                </div>
+              </div>
+              <div class="assignment-item">
+                <div class="assignment-icon">
+                  <i class="fas fa-book"></i>
+                </div>
+                <div class="assignment-details">
+                  <h3>Event 3</h3>
+                  <p>In 5 days</p>
+                </div>
+                <div class="assignment-priority">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+          <!-- Announcements -->
+          <div class="card">
+            <div class="card-header">
+              <h2><i class="fas fa-bullhorn"></i> Announcements</h2>
+              <a href="#" class="view-link">View All</a>
+            </div>
+            <div class="announcement-list">
+              <div class="announcement-item">
+                <div class="announcement-badge important">
+                  <i class="fas fa-exclamation"></i>
+                </div>
+                <div class="announcement-content">
+                  <h3>School Foundation Day</h3>
+                  <p>March 25 - No classes, school-wide celebration</p>
+                  <span class="announcement-time">2 hours ago</span>
+                </div>
+              </div>
+              <div class="announcement-item">
+                <div class="announcement-badge">
+                  <i class="fas fa-calendar"></i>
+                </div>
+                <div class="announcement-content">
+                  <h3>Parent-Teacher Conference</h3>
+                  <p>March 30, 2:00 PM - 5:00 PM at the Auditorium</p>
+                  <span class="announcement-time">Yesterday</span>
+                </div>
+              </div>
+              <div class="announcement-item">
+                <div class="announcement-badge">
+                  <i class="fas fa-trophy"></i>
+                </div>
+                <div class="announcement-content">
+                  <h3>Science Fair 2026</h3>
+                  <p>Registration closes on March 20</p>
+                  <span class="announcement-time">2 days ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Class Progress -->
+          <div class="card">
+            <div class="card-header">
+              <h2><i class="fas fa-chart-line"></i> Class Progress</h2>
+            </div>
+            <div class="progress-list">
+              <div class="progress-item">
+                <div class="progress-label">
+                  <span>Mathematics</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-label">
+                  <span>Chemistry</span>
+                  <span>72%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 72%"></div>
+                </div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-label">
+                  <span>English</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-label">
+                  <span>PE</span>
+                  <span>68%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 68%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Actions -->
+          <div class="card">
+            <div class="card-header">
+              <h2><i class="fas fa-bolt"></i> Quick Actions</h2>
+            </div>
+            <div class="quick-actions-grid">
+              <button class="quick-action-btn">
+                <i class="fas fa-video"></i>
+                <span>Join Class</span>
+              </button>
+              <button class="quick-action-btn">
+                <i class="fas fa-upload"></i>
+                <span>Submit Work</span>
+              </button>
+              <button class="quick-action-btn">
+                <i class="fas fa-comment"></i>
+                <span>Message Teacher</span>
+              </button>
+              <button class="quick-action-btn">
+                <i class="fas fa-hand-paper"></i>
+                <span>Request Absence</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

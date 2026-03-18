@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holy Cross College Pampanga · Schedule Portal</title>
+  <!-- Font Awesome 5 (free) for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-card">
+    <!-- left side : branding with Holy Cross College Pampanga logo -->
+    <div class="brand-panel">
+      <div class="brand-header">
+        <!-- College Logo/Icon -->
+        <div class="college-logo">
+          <i class="fas fa-cross"></i>
+        </div>
+        <h2>Holy Cross College<br><span>Pampanga</span></h2>
+      </div>
+      
+      <div class="logo-container">
+        <img src="logohcc.png" alt="Holy Cross College Pampanga Logo" class="school-logo">
+      </div>
+
+      <!-- College Motto -->
+      <div class="college-motto">
+        <i class="fas fa-quote-left"></i> Fides, Caritas, Libertas <i class="fas fa-quote-right"></i>
+      </div>
+    </div>
+
+    <!-- right side: login form -->
+    <div class="form-panel">
+      <div class="form-header">
+        <h1>Welcome <span>back</span></h1>
+        <p>Enter your credentials to check your schedule</p>
+      </div>
+
+      <form id="loginForm" onsubmit="return false;">
+        <!-- username / email field -->
+        <div class="input-group">
+          <label for="email">Email</label>
+          <div class="input-icon">
+            <i class="fas fa-user"></i>
+            <input type="text" id="email" name="email" placeholder="e.g. student@hccp.edu.ph" autocomplete="email">
+          </div>
+        </div>
+
+        <!-- password field -->
+        <div class="input-group">
+          <label for="password">Password</label>
+          <div class="input-icon">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" name="password" placeholder="··········" autocomplete="current-password">
+          </div>
+        </div>
+
+        <!-- remember me & forgot password -->
+        <div class="form-extras">
+          <label class="remember-me">
+            <input type="checkbox" checked> <span>Keep me signed in</span>
+          </label>
+        </div>
+
+        <!-- login button -->
+        <button type="submit" class="login-btn">
+          <span>Log In</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </form>
+
+      <p class="signup-hint">
+        <i class="fas fa-id-card"></i> New to Holy Cross College? <a href="signup.html">Sign Up</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Cross College Pampanga · Login</title>
+    <!-- Font Awesome 6 (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="login-container">
+        <!-- Left Section - Branding -->
+        <div class="brand-section">
+            <div class="brand-content">
+                <!-- Animated Logo -->
+                <div class="animated-logo">
+                    <div class="logo-circle">
+                        <i class="fas fa-cross"></i>
+                    </div>
+                    <div class="logo-ring"></div>
+                </div>
+
+                <h1 class="brand-title">Holy Cross College<br><span>Schedule Portal</span></h1>
+
+                <div class="brand-quote">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Fides, Caritas, Libertas</p>
+                    <i class="fas fa-quote-right"></i>
+                </div>
+
+                <!-- Features List -->
+                <div class="features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Real-time Schedule</h3>
+                            <p>Access your classes instantly</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Smart Notifications</h3>
+                            <p>Never miss an assignment</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h3>Track Progress</h3>
+                            <p>Monitor your grades</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-number">2.5k+</span>
+                        <span class="stat-label">Students</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Faculty</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section - Login Form -->
+        <div class="login-section">
+            <div class="login-form-container">
+                <!-- Header -->
+                <div class="form-header">
+                    <h2>Welcome !</h2>
+                    <p>Please enter your credentials to access your schedule</p>
+                </div>
+
+                <!-- Login Form -->
+                <form class="login-form" id="loginForm">
+                    <!-- Username/Email Field -->
+                    <div class="input-group">
+                        <label for="email">
+                            <i class="fas fa-envelope"></i>
+                            Email
+                        </label>
+                        <input type="text" name="email" placeholder="e.g., juan.delacruz@hccp.edu.ph"
+                            autocomplete="email" required>
+                        <div class="input-highlight"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="first_name">
+                            <i class="fas fa-circle-user"></i>
+                            First Name
+                        </label>
+                        <input type="text" name="first_name" placeholder="Enter First Name" autocomplete="first_name" required>
+                        <div class="input-highlight"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="last_name">
+                            <i class="fas fa-circle-user"></i>
+                            Last Name
+                        </label>
+                        <input type="text" name="last_name" placeholder="Enter Last Name" autocomplete="last_name" required>
+                        <div class="input-highlight"></div>
+                    </div>
+
+                    <!-- Password Field -->
+                    <div class="input-group">
+                        <label for="password">
+                            <i class="fas fa-lock"></i>
+                            Password
+                        </label>
+                        <div class="password-wrapper">
+                            <input type="password" name="password" placeholder="Enter your password"
+                                autocomplete="current-password" required>
+                            <button type="button" class="password-toggle" id="togglePassword">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="input-highlight"></div>
+                    </div>
+
+                    <!-- Remember & Forgot -->
+                    <div class="form-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox" checked>
+                            <span class="checkmark"></span>
+                            <span class="checkbox-text">Remember me</span>
+                        </label>
+                    </div>
+
+                    <!-- Login Button -->
+                    <button type="submit" class="login-button">
+                        <span>Sign In</span>
+                        <i class="fas fa-arrow-right"></i>
+                        <div class="button-glow"></div>
+                    </button>
+
+                </form>
+
+                <!-- Sign Up Link -->
+                <div class="signup-section">
+                    <p>Already have an account?</p>
+                    <a href="index.html" class="signup-link">
+                        Sign In
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

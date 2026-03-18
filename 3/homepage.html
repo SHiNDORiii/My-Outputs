@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holy Cross College Pampanga · Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="background">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+  </div>
+
+  <!-- Main App Container -->
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-wrapper">
+          <div class="logo-icon">
+            <i class="fas fa-cross"></i>
+            <div class="logo-ring"></div>
+          </div>
+          <div class="logo-text">
+            <span class="logo-main">Holy Cross College</span>
+            <span class="logo-sub">Schedule Portal</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-nav">
+        <div class="nav-section">
+          <span class="nav-section-title">Main</span>
+          <a href="#" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Dashboard</span>
+            <div class="active-indicator"></div>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="fas fa-calendar-alt"></i>
+            <span>Schedule</span>
+            <span class="nav-badge">5</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="fas fa-book-open"></i>
+            <span>Classes</span>
+          </a>
+        </div>
+
+        <div class="nav-section">
+          <span class="nav-section-title">Academics</span>
+          <a href="#" class="nav-item">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <span>Teachers</span>
+          </a>
+        </div>
+
+        <div class="nav-section">
+          <span class="nav-section-title">Communication</span>
+          <a href="#" class="nav-item">
+            <i class="fas fa-bullhorn"></i>
+            <span>Announcements</span>
+            <span class="nav-badge">2</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="fas fa-comments"></i>
+            <span>Messages</span>
+          </a>
+          <a href="#" class="nav-item">
+            <i class="fas fa-users"></i>
+            <span>Study Groups</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="user-card">
+          <img src="https://ui-avatars.com/api/?name=Juan+Dela+Cruz&background=1e3c72&color=fff&size=60" alt="User" class="user-avatar">
+          <div class="user-info">
+            <span class="user-name">Juan Dela Cruz</span>
+            <span class="user-role">BSCS 1 · A</span>
+          </div>
+          <button class="user-menu-btn">
+            <i class="fas fa-chevron-up"></i>
+          </button>
+        </div>
+        <div class="quick-stats">
+          <div class="quick-stat">
+            <i class="fas fa-star"></i>
+            <span>3.8 GPA</span>
+          </div>
+          <div class="quick-stat">
+            <i class="fas fa-clock"></i>
+            <span>85%</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Top Navigation -->
+      <header class="top-nav">
+        <div class="nav-left">
+          <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <div class="nav-right">
+          <div class="date-display">
+            <i class="fas fa-calendar"></i>
+            <span>March 17, 2026</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Dashboard Content -->
+      <div class="dashboard-content">
+        <!-- Welcome Section -->
+        <div class="welcome-section">
+          <div class="welcome-text">
+            <h1>Good Day, Juan! <span class="wave">👋</span></h1>
+          </div>
+          <div class="quick-actions">
+            <button class="action-btn">
+              <i class="fas fa-calendar-plus"></i>
+              <span>Schedule</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon blue">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <div class="stat-info">
+              <span class="stat-value">3</span>
+              <span class="stat-label">Active Classes</span>
+            </div>
+            <div class="stat-trend up">
+              <i class="fas fa-arrow-up"></i>
+              <span>+6 this week</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon orange">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="stat-info">
+              <span class="stat-value">4.5</span>
+              <span class="stat-label">Hours Today</span>
+            </div>
+            <div class="stat-trend">
+              <i class="fas fa-minus"></i>
+              <span>On track</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon purple">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="stat-info">
+              <span class="stat-value">89%</span>
+              <span class="stat-label">Attendance</span>
+            </div>
+            <div class="stat-trend up">
+              <i class="fas fa-arrow-up"></i>
+              <span>+5%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Grid Layout -->
+        <div class="dashboard-grid">
+          <!-- Left Column -->
+          <div class="grid-left">
+            <!-- Today's Schedule Card -->
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">
+                  <i class="fas fa-calendar-day"></i>
+                  <h2>Today's Schedule</h2>
+                </div>
+                <div class="card-actions">
+                  <button class="btn-icon">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <span class="date-range">Mar 19, 2026</span>
+                  <button class="btn-icon">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                  <a href="#" class="view-link">Full Week <i class="fas fa-arrow-right"></i></a>
+                </div>
+              </div>
+
+              <div class="schedule-timeline">
+                <!-- Current Time Indicator -->
+                <div class="current-time-line" style="top: 25%">
+                  <span class="time-dot"></span>
+                  <span class="time-label">Now</span>
+                </div>
+
+                <div class="schedule-item current">
+                  <div class="time-block">
+                    <span class="time">09:30</span>
+                    <span class="time-end">11:00</span>
+                  </div>
+                  <div class="event-block">
+                    <div class="event-dot"></div>
+                    <div class="event-content">
+                      <div class="event-header">
+                        <h3>Discrete Mathematics</h3>
+                        <span class="status-badge ongoing">In Progress</span>
+                      </div>
+                      <p class="event-location">
+                        <i class="fas fa-map-pin"></i> Drawing Room  ·  Mr. Grosby Dela Cruz
+                      </p>
+                      <div class="event-progress">
+                        <span>1 hr 10 mins remaining</span>
+                        <div class="progress-bar">
+                          <div class="progress-fill" style="width: 80%"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="schedule-item break">
+                  <div class="time-block">
+                    <span class="time">11:00</span>
+                    <span class="time-end">1:00</span>
+                  </div>
+                  <div class="event-block">
+                    <div class="event-dot orange"></div>
+                    <div class="event-content">
+                      <h3>Lunch Break</h3>
+                      <p class="event-location">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="schedule-item">
+                  <div class="time-block">
+                    <span class="time">1:00</span>
+                    <span class="time-end">3:30</span>
+                  </div>
+                  <div class="event-block">
+                    <div class="event-dot green"></div>
+                    <div class="event-content">
+                      <h3>Programming 2</h3>
+                      <p class="event-location">
+                        Computer Lab B  ·  Ms. Patricia Cruz
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="schedule-item">
+                  <div class="time-block">
+                    <span class="time">5:00</span>
+                    <span class="time-end">7:30</span>
+                  </div>
+                  <div class="event-block">
+                    <div class="event-dot red"></div>
+                    <div class="event-content">
+                      <h3>Web Development 1</h3>
+                      <p class="event-location">
+                        Computer Lab A  ·  Mr. Joseph Cris Valdez
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Announcements Card -->
+            <div class="card">
+              <div class="card-header">
+                <div class="card-title">
+                  <i class="fas fa-bullhorn"></i>
+                  <h2>Announcements</h2>
+                </div>
+                <a href="#" class="view-link">View All</a>
+              </div>
+
+              <div class="announcements-list">
+                <div class="announcement-item important">
+                  <div class="announcement-icon">
+                    <i class="fas fa-exclamation"></i>
+                  </div>
+                  <div class="announcement-content">
+                    <h4>School Foundation Day</h4>
+                    <p>March 25 - No classes, school-wide celebration</p>
+                    <span class="announcement-time"><i class="fas fa-clock"></i> 2 hours ago</span>
+                  </div>
+                </div>
+
+                <div class="announcement-item">
+                  <div class="announcement-icon">
+                    <i class="fas fa-calendar"></i>
+                  </div>
+                  <div class="announcement-content">
+                    <h4>Parent-Teacher Conference</h4>
+                    <p>March 30, 2:00 PM - 5:00 PM at the Auditorium</p>
+                    <span class="announcement-time"><i class="fas fa-clock"></i> Yesterday</span>
+                  </div>
+                </div>
+
+                <div class="announcement-item">
+                  <div class="announcement-icon">
+                    <i class="fas fa-trophy"></i>
+                  </div>
+                  <div class="announcement-content">
+                    <h4>Science Fair 2026</h4>
+                    <p>Registration closes on March 20</p>
+                    <span class="announcement-time"><i class="fas fa-clock"></i> 2 days ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
